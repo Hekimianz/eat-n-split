@@ -33,7 +33,7 @@ This app was built as a **learning exercise** to practice:
 
 ---
 
-## 📸 Demo (Optional)
+## 📸 Demo 
 
 N/A
 
