@@ -25,6 +25,8 @@ function BillInfo({
     : friendExpenseNum.toFixed(2);
 
   const handleSubmit = () => {
+    if (!bill || expense === '') return;
+    console.log();
     const finalBalance = +expense - friendExpenseNum;
     setFriends((prev) =>
       prev.map((f) =>
@@ -33,7 +35,7 @@ function BillInfo({
     );
     setBill('');
     setExpense('');
-    console.log(friends);
+    setOpenedFriend(null);
   };
   return (
     <section id="billInfo">
@@ -41,7 +43,7 @@ function BillInfo({
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          setOpenedFriend(null);
+
           handleSubmit();
         }}
       >
