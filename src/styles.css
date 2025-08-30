@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'TASA Explorer', sans-serif;
 }
 
 body,
@@ -8,7 +9,6 @@ html,
 #root {
   height: 100%;
   width: 100%;
-  font-family: 'TASA Explorer', sans-serif;
 }
 
 body {
@@ -151,4 +151,34 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+#billInfo input,
+#friendExpense,
+#who {
+  height: 30px;
+  background-color: #caf0f8;
+  border: 1px solid black;
+  width: 100px;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#friendExpense {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
 }
