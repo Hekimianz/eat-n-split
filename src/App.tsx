@@ -20,6 +20,7 @@ function App() {
         friends={friends}
         setFriends={setFriends}
         setOpenedFriend={setOpenedFriend}
+        key={openedFriend}
       />
     </main>
   );
